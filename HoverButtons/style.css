@@ -692,3 +692,21 @@ a span:nth-child(4){
 
 
 /* FUTURISTIC HOVER EFFECT END */
+
+
+/* POPUP HOVER */
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+}
+.sub-btn{
+    width: 160px;
+    height: 45px;
+    border: none;
+}
