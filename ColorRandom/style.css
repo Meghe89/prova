@@ -1,0 +1,117 @@
+/* RANDOM COLOR GENERATOR START */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2c3036;
+    transition: 0.1s;
+}
+#color{
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 8px 16px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
+button{
+    padding: 20px 48px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: #2a4636;
+    color: #fff;
+    border: 2px solid #01d401;
+    transition: 100ms ease-in-out;
+}
+button:hover{
+    outline: none;
+    color: white;
+    box-shadow: 0 0 50px 50px #01d401 inset, 0 0 10px #01d401;
+} */
+/* RANDOM COLOR GENERATOR END */
+
+
+/* SKILLBAR */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: #153365;
+}
+.center{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    background: rgb(218, 163, 15);
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    columns: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #ff9900,
+    0 0 10px #ff9900,
+    0 0 10px #ff9900,
+    0 0 10px #ff9900,
+    0 0 10px #ff9900;
+}
+.skillBox{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+}
+.skillBox p{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin: 0 0 10px 10px;
+    padding: 0;
+    letter-spacing: 1px;
+}
+.skillBox p:nth-child(2){
+    float: right;
+    position: relative;
+    top: -25px;
+}
+.skill{
+    background: #076d70;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #52be4d;
+    border-radius: 50px;
+}
+.skill_level{
+    background: #52befd;
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
+}
+#html_level{
+    width: 90%;
+}
+#css_level{
+    width: 40%;
+}
+#js_level{
+    width: 60%;
+}
+#php_level{
+    width: 70%;
+}
