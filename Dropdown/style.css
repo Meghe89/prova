@@ -77,6 +77,12 @@ nav .tooltip.show{
     background: #ffffff;
     color: #364f6b;
 }
+.wrapper ul li a:hover .icon{
+    background: #c5e3f6;
+    transform: rotate(360deg) scale(1.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
 ul li a .icon{
     height: 40px;
     width: 40px;
@@ -88,5 +94,31 @@ ul li a .icon{
     border-radius: 50%;
 }
 ul li a .icon span{
-    
+    line-height: 45px;
+    font-size: 20px;
+    color: #364f6b;
+}
+ul li a:hover.icons span{
+    color: #364f6b;
+}
+ul li a i{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+}
+.wrapper ul.setting-drop,
+.wrapper ul.help-drop{
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+}
+.wrapper .arrow{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #364f6b;
+    cursor: pointer;
+}
+.wrapper .arrow span{
+    margin-right:15px ;
 }
