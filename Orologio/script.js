@@ -28,15 +28,18 @@ setInterval(()=>{
     document.querySelector('.hr').style.transform = `rotate(${hour}deg)`;
     document.querySelector('.min').style.transform = `rotate(${minute}deg)`;
     document.querySelector('.sec').style.transform= `rotate(${second}deg)`;
-},1000);
+},900);
+
+
 
 let date = new Date();
 let month = date.getMonth();
 let day = date.getDate();
 let weekDay = date.getDay()
 
-function settDay(day) {
-    switch (day) {
+
+function settDay(weekDay) {
+    switch (weekDay) {
         case 1:
             return 'Lunedì';
             break;
@@ -55,7 +58,7 @@ function settDay(day) {
         case 6:
             return 'Sabato';
             break;
-        case 7:
+        case 0:
             return 'Domenica';
             break;
              
@@ -104,5 +107,22 @@ function nameMonth(mese) {
              
     }
 }
-/* const ri = document.querySelector('.date');
-ri.innerHTML = `${nameMonth(mese)}${day}${settDay}`; */
+
+const calendario = document.querySelector('.date');
+calendario.innerHTML = `${settDay(weekDay)}, ${day} ${nameMonth(weekDay)}`;
+
+function getWeather(city, callback) {
+    var url = 'http://api.openweathermap.org/data/2.5/weather';
+    ajax({
+      dataType: "jsonp",
+      url: url,
+      jsonCallback: 'jsonp',
+      data: { q: city },
+      cache: false,
+      success: function (data) {
+        callback(data.main.temp);
+      }
+    });
+  }
+
+  console.log(getWeather('Naples'));
