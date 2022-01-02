@@ -113,7 +113,7 @@ calendario.innerHTML = `${settDay(weekDay)}, ${day} ${nameMonth(weekDay)}`;
 
 function getWeather(city, callback) {
     var url = 'http://api.openweathermap.org/data/2.5/weather';
-    ajax({
+    $.ajax({
       dataType: "jsonp",
       url: url,
       jsonCallback: 'jsonp',
