@@ -133,13 +133,10 @@ body{
     font-size: 25px;
     color: var(--gray);
 }
-.basic .city{
-    font-size: 25px;
-    color: var(--gray);
-}
 .basic .date{
     font-size: 20px;
     color: var(--orange);
+    
 }
 .mode{
     margin-top: 70px;
@@ -149,4 +146,9 @@ body{
     outline: none;
     cursor: pointer;
     background: transparent;
+}
+.basic .city,
+.basic .date,
+.degree{
+    font-weight: 900;
 }

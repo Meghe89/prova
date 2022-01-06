@@ -38,6 +38,8 @@ let day = date.getDate();
 let weekDay = date.getDay()
 
 
+
+
 function settDay(weekDay) {
     switch (weekDay) {
         case 1:
@@ -108,10 +110,12 @@ function nameMonth(mese) {
     }
 }
 
-const calendario = document.querySelector('.date');
-calendario.innerHTML = `${settDay(weekDay)}, ${day} ${nameMonth(weekDay)}`;
 
-function getWeather(city, callback) {
+
+const calendario = document.querySelector('.date');
+calendario.innerHTML = `${settDay(weekDay)}, ${day} ${nameMonth(month)}`;
+
+/* function getWeather(city, callback) {
     var url = 'http://api.openweathermap.org/data/2.5/weather';
     $.ajax({
       dataType: "jsonp",
@@ -125,4 +129,4 @@ function getWeather(city, callback) {
     });
   }
 
-  console.log(getWeather('Naples'));
+  console.log(getWeather('Naples')); */
