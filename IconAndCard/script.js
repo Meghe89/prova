@@ -1,4 +1,4 @@
-let day = document.querySelector('#day');
+/* let day = document.querySelector('#day');
 let monthName = document.querySelector('#month');
 
 let today = new Date();
@@ -53,3 +53,4 @@ day.innerHTML = date;
 monthName.innerHTML = nameMonth(month);
  
 
+ */
